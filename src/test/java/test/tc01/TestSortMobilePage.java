@@ -15,7 +15,6 @@ public class TestSortMobilePage {
     public static void TestSortingByName() {
         WebDriver driver = driverFactory.getChromeDriver();
         MobilePage mobilePage = new MobilePage(driver);
-
         try {
             // Step 1: Go to http://live.techpanda.org/
             driver.get("http://live.techpanda.org/");
