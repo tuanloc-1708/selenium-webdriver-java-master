@@ -12,7 +12,6 @@
     public class TestPriceSonyXperia {
         public static void TestPriceSonyXperia() {
             WebDriver driver = driverFactory.getChromeDriver();
-
             try {
                 //1. Goto http://live.techpanda.org/
                 driver.get("http://live.techpanda.org/");

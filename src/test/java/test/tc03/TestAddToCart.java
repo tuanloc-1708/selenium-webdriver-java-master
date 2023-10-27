@@ -10,7 +10,6 @@ public class TestAddToCart {
     @Test
     public void TestAddToCart() {
         WebDriver driver = driverFactory.getChromeDriver();
-
         try {
             //1. Go to http://live.techpanda.org/
             driver.get("http://live.techpanda.org/");

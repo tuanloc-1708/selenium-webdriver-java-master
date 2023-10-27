@@ -10,7 +10,6 @@ public class TestCompareProducts {
     @Test
     public void testCompareProducts() {
         WebDriver driver = driverFactory.getChromeDriver();
-
         try {
             //1. Go to http://live.techpanda.org/
             driver.get("http://live.techpanda.org/");
