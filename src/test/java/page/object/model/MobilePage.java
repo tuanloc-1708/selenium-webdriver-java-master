@@ -47,7 +47,5 @@ public class MobilePage {
     public void clickSonyXperiaLink() {
         driver.findElement(sonyXperiaLink).click();
     }
-
-
 }
 
