@@ -3,14 +3,18 @@ package page.object.model;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountPage {
     WebDriver driver;
 
+    // Define your locators at the top of the class
     By myAccountLink = By.linkText("MY ACCOUNT");
     By createAccountLink = By.linkText("CREATE AN ACCOUNT");
+    By firstNameInputLocator = By.id("firstname");
+    By lastNameInputLocator = By.id("lastname");
+    By emailInputLocator = By.id("email_address");
+    By passwordInputLocator = By.id("password");
+    By confirmPasswordInputLocator = By.id("confirmation");
     By registerButton = By.xpath("//button[@title='Register']");
     By tvMenuLink = By.linkText("TV");
     By addToWishlistLink = By.xpath("//a[@title='LG LCD']//following::a[@class='link-wishlist']");
@@ -23,12 +27,43 @@ public class AccountPage {
         this.driver = driver;
     }
 
+    // Create methods for each action
     public void clickMyAccountLink() {
         driver.findElement(myAccountLink).click();
     }
 
     public void clickCreateAccountLink() {
         driver.findElement(createAccountLink).click();
+    }
+
+    public void enterFirstName(String firstName) {
+        WebElement firstNameElement = driver.findElement(firstNameInputLocator);
+        firstNameElement.clear();
+        firstNameElement.sendKeys(firstName);
+    }
+
+    public void enterLastName(String lastName) {
+        WebElement lastNameElement = driver.findElement(lastNameInputLocator);
+        lastNameElement.clear();
+        lastNameElement.sendKeys(lastName);
+    }
+
+    public void enterEmail(String email) {
+        WebElement emailElement = driver.findElement(emailInputLocator);
+        emailElement.clear();
+        emailElement.sendKeys(email);
+    }
+
+    public void enterPassword(String password) {
+        WebElement passwordElement = driver.findElement(passwordInputLocator);
+        passwordElement.clear();
+        passwordElement.sendKeys(password);
+    }
+
+    public void enterConfirmPassword(String confirmPassword) {
+        WebElement confirmPasswordElement = driver.findElement(confirmPasswordInputLocator);
+        confirmPasswordElement.clear();
+        confirmPasswordElement.sendKeys(confirmPassword);
     }
 
     public void clickRegisterButton() {
@@ -47,11 +82,6 @@ public class AccountPage {
         driver.findElement(shareWishlistButton).click();
     }
 
-    public void enterEmail(String email) {
-        WebElement emailElement = driver.findElement(emailInput);
-        emailElement.clear();
-        emailElement.sendKeys(email);
-    }
 
     public void enterMessage(String message) {
         WebElement messageElement = driver.findElement(messageInput);
@@ -62,4 +92,6 @@ public class AccountPage {
     public void clickShareWishlistSubmitButton() {
         driver.findElement(shareWishlistSubmitButton).click();
     }
+
+
 }
