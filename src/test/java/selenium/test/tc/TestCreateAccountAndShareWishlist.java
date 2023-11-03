@@ -1,4 +1,4 @@
-package test.tc05;
+package selenium.test.tc;
 
 import driver.driverFactory;
 import org.openqa.selenium.By;
@@ -27,7 +27,7 @@ public class TestCreateAccountAndShareWishlist {
             //3. Click Create an Account link and fill New User information excluding the registered Email ID.
             accountPage.enterFirstName("John");
             accountPage.enterLastName("Doe");
-            accountPage.enterEmail("johndoe3@example.com");
+            accountPage.enterEmail("johndoe4@example.com");
             accountPage.enterPassword("password123");
             accountPage.enterConfirmPassword("password123");
 
@@ -50,7 +50,7 @@ public class TestCreateAccountAndShareWishlist {
             accountPage.clickShareWishlistButton();
 
             //9. In next page enter Email and a message and click SHARE WISHLIST
-            accountPage.enterEmail("johndoe@example.com");
+            accountPage.enterEmail("johndoe4@example.com");
             accountPage.enterMessage("Check out my wishlist!");
             accountPage.clickShareWishlistSubmitButton();
 

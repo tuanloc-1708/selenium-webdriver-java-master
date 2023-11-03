@@ -1,4 +1,4 @@
-package test.tc01;
+package selenium.test.tc;
 
 import driver.driverFactory;
 
@@ -42,6 +42,7 @@ public class TestSortMobilePage {
                 System.out.println("Products are not sorted by name");
             }
 
+            Thread.sleep(3000);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

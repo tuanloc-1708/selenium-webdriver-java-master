@@ -1,4 +1,4 @@
-package test.tc04;
+package selenium.test.tc;
 
 import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +30,7 @@ public class TestCompareProducts {
             String expectedHeader = "COMPARE PRODUCTS";
             String actualHeader = compareProductsPage.getCompareProductsHeader();
             Assert.assertEquals(expectedHeader, actualHeader);
+
 
         } catch (Exception e) {
             e.printStackTrace();

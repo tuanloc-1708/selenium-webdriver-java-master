@@ -1,4 +1,4 @@
-    package test.tc02;
+    package selenium.test.tc;
 
     import driver.driverFactory;
     import org.openqa.selenium.WebDriver;
@@ -37,6 +37,7 @@
                     System.out.println("The product price on the list and details page are not equal.");
                 }
 
+                Thread.sleep(3000);
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {

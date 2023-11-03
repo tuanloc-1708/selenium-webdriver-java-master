@@ -1,4 +1,4 @@
-package test.tc03;
+package selenium.test.tc;
 
 import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
@@ -37,6 +37,8 @@ public class TestAddToCart {
             //7. Verify cart is empty
             String actualEmptyCartMessage = shoppingCartPage.getEmptyCartMessage();
             Assert.assertEquals(expectedEmptyCartMessage, actualEmptyCartMessage);
+
+            Thread.sleep(5000);
 
         } catch (Exception e) {
             e.printStackTrace();
