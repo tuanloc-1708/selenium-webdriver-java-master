@@ -4,9 +4,7 @@ import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.object.model.CartPage;
-
-import java.time.Duration;
+import selenium.page.object.model.CartPage;
 
 public class TestPurchaseProduct {
     @Test

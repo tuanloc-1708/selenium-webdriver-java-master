@@ -4,7 +4,7 @@ import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.object.model.ShoppingCartPage;
+import selenium.page.object.model.ShoppingCartPage;
 
 public class TestAddToCart {
     @Test

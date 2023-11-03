@@ -2,11 +2,9 @@
 
     import driver.driverFactory;
     import org.openqa.selenium.WebDriver;
-    import org.openqa.selenium.By;
-    import org.openqa.selenium.WebElement;
     import org.testng.annotations.Test;
-    import page.object.model.MobilePage;
-    import page.object.model.SonyXperiaPage;
+    import selenium.page.object.model.MobilePage;
+    import selenium.page.object.model.SonyXperiaPage;
 
     @Test
     public class TestPriceSonyXperia {

@@ -4,7 +4,7 @@ import driver.driverFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import page.object.model.MobilePage;
+import selenium.page.object.model.MobilePage;
 
 import java.util.ArrayList;
 import java.util.Collections;

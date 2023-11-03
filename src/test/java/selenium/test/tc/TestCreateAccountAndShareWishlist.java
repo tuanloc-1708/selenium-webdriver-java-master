@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.object.model.AccountPage;
+import selenium.page.object.model.AccountPage;
 
 import java.time.Duration;
 

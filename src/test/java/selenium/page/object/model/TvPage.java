@@ -1,4 +1,4 @@
-package page.object.model;
+package selenium.page.object.model;
 
 
 

@@ -4,7 +4,7 @@ import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.object.model.CompareProductsPage;
+import selenium.page.object.model.CompareProductsPage;
 
 public class TestCompareProducts {
     @Test

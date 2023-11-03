@@ -1,18 +1,11 @@
 package selenium.test.tc;
 
 import driver.driverFactory;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import page.object.model.CartPage;
-import page.object.model.OrderPage;
+import selenium.page.object.model.OrderPage;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.time.Duration;
 
 public class TestSaveOrderAsPdf {
     @Test

@@ -4,7 +4,7 @@ import driver.driverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.object.model.ReorderPage;
+import selenium.page.object.model.ReorderPage;
 
 @Test
 public class TestReorderPage {
