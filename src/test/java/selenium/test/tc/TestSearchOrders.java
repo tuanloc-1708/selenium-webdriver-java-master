@@ -28,7 +28,7 @@ public class TestSearchOrders {
 
             exportOrdersTest.clickSearch();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
             //3. Capture screenshot
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileHandler.copy(screenshot, new File("Result.png"));
