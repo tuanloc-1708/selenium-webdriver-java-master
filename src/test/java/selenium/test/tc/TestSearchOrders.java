@@ -1,30 +1,38 @@
 package selenium.test.tc;
 
 import driver.driverFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
-import selenium.page.object.model.ExportOrders;
+import selenium.page.object.model.SearchOrders;
 
-public class TestExportOrders {
+import java.io.File;
+
+public class TestSearchOrders {
     @Test
-    public void TestExportOrders() {
+    public void TestSearchOrders() {
         WebDriver driver = driverFactory.getChromeDriver();
         try {
             //1. Go to http://live.techpanda.org/index.php/backendlogin
             driver.get("http://live.techpanda.org/index.php/backendlogin");
 
             //2. Login and export orders
-            ExportOrders exportOrdersTest = new ExportOrders(driver);
+            SearchOrders exportOrdersTest = new SearchOrders(driver);
             exportOrdersTest.loginBackend();
 
             exportOrdersTest.closeMessage();
 
             exportOrdersTest.clickSalesOrders();
 
-            exportOrdersTest.clickExportCsv();
+            exportOrdersTest.clickSearch();
 
-            Thread.sleep(3000);
+            Thread.sleep(5000);
+            //3. Capture screenshot
+            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileHandler.copy(screenshot, new File("Result.png"));
+
 
         } catch (Exception e) {
             e.printStackTrace();
